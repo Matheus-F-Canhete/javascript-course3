@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Desafio Matemático</title>
+
+	<script>
+		
+		var num1 = prompt('Informe o primeiro número da operação:')
+		var operacao = prompt('A operação será de soma ou subtração?')
+		var num2 = prompt('Informe o segundo número da operação:')
+
+		function calculo (num1, num2, operacao) {
+
+		num1 = parseFloat(num1)
+		num2 = parseFloat(num2)
+
+		var resultado = 0
+
+		if (operacao == 'Soma' || operacao == 'soma' || operacao == 'SOMA') {
+			resultado = num1 + num2
+		} else if (operacao == 'Subtração' || operacao == 'subtração' || operacao == 'SUBTRAÇÃO') {
+			resultado = num1 - num2
+		}
+
+		return resultado
+
+		}
+
+		document.write('O resultado é: ' +calculo(num1, num2, operacao))
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
